@@ -26,7 +26,7 @@ body {
   font-family: arial;
   font-size: 40px;
   font-weight: normal;
-  color: #e37227; }
+  color: #000; }
 
 ::selection {
   color: #fff;
@@ -239,7 +239,7 @@ body {
 .reveal section img {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
-  border: 4px solid #e37227;
+  border: 4px solid #000;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
 
 .reveal section img.plain {
