@@ -7,7 +7,7 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/arc.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +24,80 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+						<img src="img/arc-title.png" height="500px" />
+						<h6><em>Sci-GaIA Final Event - March 2017</em></h6>
+				</section>
+				<section data-background-image="img/arc-footer.png" data-background-position="left bottom" data-background-size="300px">
+					<section>
+						<h3>Partners</h3>
+					</section>
+					<section>
+						<h4>
+							<img style="vertical-align:middle" src="img/uct.png" />
+							<span>UCT</span>
+						</h4>
+						<h6><em>University of Cape Town</em></h6>
+						Orignal implementation and provider of coreservices and compute
+					</section>
+					<section>
+						<h4>
+							<img style="vertical-align:middle" src="img/nwu.png" />
+							<span>NWU</span>
+						</h4>
+						<h6><em>North West University</em></h6>
+						Part of original implementation and primary provider of object storage
+					</section>
+					<section>
+						<h4>
+							<img style="vertical-align:middle" src="img/nwu.png" />
+							<span>UWC</span>
+						</h4>
+						<h6><em>University of the Western Cape</em></h6>
+					</section>
+					<section>
+						<h4>
+							<img style="vertical-align:middle" src="img/idia.jpg" />
+							<span>IDIA</span>
+							<h6><em>University of Cape Town</em></h6>
+						</h4>
+					</section>
+					<section>
+						<h4>
+							<img style="vertical-align:middle" src="img/eResearch.png" />
+							<span>UCT eResearch</span>
+							<h6><em>University of Cape Town eResearch Division</em></h6>
+						</h4>
+					</section>
+				</section>
+				<section data-background-image="img/arc-footer.png" data-background-position="left bottom" data-background-size="300px">
+					<section><h3>Galaxy</h3></section>
+				  <section>
+						<h4>The Team</h4>
+						 <ul>
+							 <li>Eben van Zyl</li>
+							 <li>Ciellie jansen van Vuuren</li>
+							 <li>Dr Thomas Sanko (Eng)</li>
+							 <li>Dr Charlotte Mienie</li>
+							 <li>Peter van Heusden</li>
+							 <li>Warren Jacobus</li>
+							 <li>Timothy Carr</li>
+							 <li>Anelda van der Walt</li>
+						 </ul>
+					</section>
+				</section>
+				<section data-background-image="img/arc-footer.png" data-background-position="left bottom" data-background-size="300px">
+					<section><h3>Arcade</h3></section>
+				</section>
+				<section data-background-image="img/arc-footer.png" data-background-position="left bottom" data-background-size="300px">
+					<section><h3>Software Carpentry</h3></section>
+				</section>
+				<section data-background-image="img/arc-footer.png" data-background-position="left bottom" data-background-size="300px">
+					<section><h3>HPCaaS</h3></section>
+				</section>
+				<section data-background-image="img/arc-footer.png" data-background-position="left bottom" data-background-size="300px">
+					<section><h3>The future....</h3></section>
+				</section>
 			</div>
 		</div>
 
@@ -36,7 +108,8 @@
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				history: true,
-
+				controls: false,
+				transition: 'convex',
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
