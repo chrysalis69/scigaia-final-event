@@ -29,12 +29,23 @@
 						<h4><em>Sci-GaIA Final Event - March 2017</em></h4>
 				</section>
 				<section data-background-image="img/arc-footer.png" data-background-position="left bottom" data-background-size="300px">
-					<section>
-						<h2>Partners</h2>
+					<section data-markdown>
+						### Agenda
+						* Partners
+						* Software &amp; Technologies
+						* Galaxy
+						* Arcade
+						* HPCaaS
+						* The future...
+					</section>
+				</section>
+				<section data-background-image="img/arc-footer.png" data-background-position="left bottom" data-background-size="300px">
+					<section data-markdown>
+						### Partners
 					</section>
 					<section>
-						<h3><img style="vertical-align:middle" src="img/uct.png" />
-						University of Cape Town</h3>
+						<h4><img style="vertical-align:middle" src="img/uct.png" />
+						University of Cape Town</h4>
 						<ul>
 							<li>Founding Member</li>
 							<li>Core Services</li>
@@ -43,18 +54,18 @@
 						</ul>
 					</section>
 					<section>
-							<h3><img style="vertical-align:middle" src="img/nwu.png" />
-						  North West University</h3>
+							<h4><img style="vertical-align:middle" src="img/nwu.png" />
+						  North West University</h4>
 							<ul>
 								<li>Founding Member</li>
 								<li>Object Storage</li>
 							</ul>
 					</section>
 					<section>
-						<h3>
+						<h4>
 							<img style="vertical-align:top; width:150px" src="img/idia.jpg" />
 						  <span style="display:inline-block; width:80%">Inter-University Institute for Data Intensive Astronomy</span>
-						</h3>
+						</h4>
 						<ul>
 							<li>Largest investor</li>
 							<li>Initial demonstrator projects</li>
@@ -62,32 +73,30 @@
 						</ul>
 					</section>
 					<section>
-						<h3>
+						<h4>
 							<img style="vertical-align:middle; width:130px" src="img/uwc.png" />
 							<span style="display:inline-block; width:80%">University of the Western Cape</span>
-						</h3>
+						</h4>
 						<ul>
 							<li>Technical Support</li>
 							<li>Compute (Still Implementin)</li>
 						</ul>
 					</section>
 					<section>
-						<h3>
+						<h4>
 							<img style="vertical-align:middle; width:170px" src="img/eResearch.png" />
 							<span style="display:inline-block; width:80%">UCT eResearch Division</span>
-						</h3>
+						</h4>
 						<ul>
 							<li>Primary PAAS implementor</li>
 						</ul>
 					</section>
 				</section>
 				<section data-background-image="img/arc-footer.png" data-background-position="left bottom" data-background-size="300px">
-					<section>
-						<h3>Software &amp; Technologies</h3>
-						<img src="img/ubuntu.png" />
-						<img src="img/openstack.png" />
-						<img src="img/ceph.png" />
-						<img src="img/docker.png" />
+					<section data-markdown>
+						### Software &amp; Technologies
+						![](img/ubuntu.png)![](img/openstack.png)
+						![](img/ceph.png)![](img/docker.png)
 					</section>
 					<section>
 						<h4>Open Source</h4>
@@ -114,12 +123,13 @@
 							</ul>
 						</ul>
 					</section>
-					<section>
-						<h4>Ceph</h4>
-						<ul>
-							<li>No hardware lockin</li>
-							<li>Massively scalable both horizontally and vertically</li>
-						</ul>
+					<section data-markdown>
+						#### Ceph
+						 * Block Storage
+						 * Object Storage
+						 * Posix Filesystem
+						 * No hardware lockin
+						 * Massively scalable both horizontally and vertically
 					</section>
 				</section>
 				<section data-background-image="img/arc-footer.png" data-background-position="left bottom" data-background-size="300px">
@@ -145,7 +155,7 @@
 				  <section>
 						<h4>The Team</h4>
 						 <ul>
-							 <li>Eben van Zyl (NWU)</li>
+							 <li>Eben van Zyl</li>
 							 <li>Ciellie jansen van Vuuren</li>
 							 <li>Dr Thomas Sanko (Eng)</li>
 							 <li>Dr Charlotte Mienie</li>
@@ -190,6 +200,7 @@
 							<li>Timothy Carr</li>
 					</section>
 				</section>
+				<!--
 				<section data-background-image="img/arc-footer.png" data-background-position="left bottom" data-background-size="300px">
 					<section>
 						<h3>Software Carpentry</h3>
@@ -228,6 +239,7 @@
 						</ul>
 					</section>
 				</section>
+			-->
 				<section data-background-image="img/arc-footer.png" data-background-position="left bottom" data-background-size="300px">
 					<section data-markdown>
 						### HPCaaS
@@ -243,9 +255,9 @@
 							<li>Create a Data disk</li>
 							<li>Elasticluster Config</li>
 							<li>Start the cluster</li>
-						</ol>
-						<p>Optional Steps</p>
-						<ol start=5>
+
+						<strong>Optional Steps</strong>
+
 							<li>Expand Cluster</li>
 							<li>Stop Cluster</li>
 						</ol>
@@ -275,7 +287,7 @@
 					</section>
 					<section data-markdown>
 						#### Elasticluster Config
-						```ini
+						```
 [cloud/arc]
 provider=openstack
 auth_url=https://keystone.arc.ac.za:5000/v2.0
