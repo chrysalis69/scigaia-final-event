@@ -198,6 +198,7 @@
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
+		<script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.5.0.min.js"></script>
 
 		<script>
 			// More info https://github.com/hakimel/reveal.js#configuration
@@ -205,13 +206,20 @@
 				history: true,
 				controls: false,
 				transition: 'convex',
+				pubnubRemoteControl: {
+ 				 subscribeKey: 'sub-c-3b9d4a06-0e17-11e7-b09b-0619f8945a4f',    // PubNub subscribe key,
+ 				 publishKey: 'pub-c-a7c1742d-6031-425a-bd2c-4b68a6eb03ca',        // PubNub publish key
+				 inputChannel: 'input',					// the channel used to receive remote commands
+				 outputChannel: 'output',				// the channel used to update presentation status
+ 			 },
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); }},
+					{ src: 'plugin/pubnub-remote-control.js', async: true },
+			 ],
 			});
 		</script>
 	</body>
